@@ -40,6 +40,9 @@
         <activity android:name="Produtos1"></activity>
         <activity android:name="ProdutosListar"></activity>
         <activity android:name="Vendedor"></activity>
+        <activity android:name="Config"></activity>
+        <activity android:name="ConfigEditar"></activity>
+        <activity android:name="ConfigListar"></activity>
     </application>
 
 </manifest>

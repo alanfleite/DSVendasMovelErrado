@@ -15,7 +15,7 @@ public class MenuPrincipal extends ListActivity{
 	 public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        
-	        String [] menu = new String[] {"Cadastrar Clientes", "Listar Clientes", "Vendas", "Atualizar Clientes", "Atualizar Estoque", "Salvar no Servidor", "Produtos", "m", "Sair"};
+	        String [] menu = new String[] {"Cadastrar Configurações", "Listar Configurações", "Cadastrar Clientes", "Listar Clientes", "Vendas", "Atualizar Clientes", "Atualizar Estoque", "Salvar no Servidor", "Produtos", "m", "Sair"};
 	        ArrayAdapter<String> aaCursos = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, menu);
 	        setListAdapter(aaCursos);
         	
@@ -30,26 +30,32 @@ public class MenuPrincipal extends ListActivity{
 		 
 		 switch(position) {
 		 case 0:
-			 startActivity(new Intent(this,Cad_cli.class)); 
+			 startActivity(new Intent(this,Config.class)); 
 			 break;
 		 case 1:
-			 startActivity(new Intent(this,Cad_cliListar.class)); 
-			 break;		 		 
-		 case 2:
-			 startActivity(new Intent(this,Venda1.class)); 
+			 startActivity(new Intent(this,ConfigListar.class)); 
 			 break;		 
 		 case 3:
-			 startActivity(new Intent(this,ReplicarClientesIn.class)); break;
+			 startActivity(new Intent(this,Cad_cli.class)); 
+			 break;
 		 case 4:
-			 startActivity(new Intent(this,ReplicarEstoqueIn.class)); break;
+			 startActivity(new Intent(this,Cad_cliListar.class)); 
+			 break;		 		 
 		 case 5:
+			 startActivity(new Intent(this,Venda1.class)); 
+			 break;		 
+		 case 6:
+			 startActivity(new Intent(this,ReplicarClientesIn.class)); break;
+		 case 7:
+			 startActivity(new Intent(this,ReplicarEstoqueIn.class)); break;
+		 case 8:
 			 startActivity(new Intent(this,ReplicarVendasOff1.class)); 
 			 break;			 
-		 case 6:
+		 case 9:
 			 startActivity(new Intent(this,Produtos.class)); break;
-		 case 7:
+		 case 10:
 			 startActivity(new Intent(this,MesasLivres.class)); break;
-		 case 8:
+		 case 11:
 			 finish(); break;
 			 
 		default: finish();
