@@ -10,8 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Cad_cli extends Activity{
-	
-	
+		
 	private EditText txtUsuario;
 	private EditText txtRazao;
 	private EditText txtEnde;
